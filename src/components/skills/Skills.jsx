@@ -8,7 +8,7 @@ import Pg from '../../assets/pg.png'
 import TwIcon from '../../assets/tw.png'
 import Ruby from '../../assets/ruby.png'
 import Html from '../../assets/html.png'
-import Css from '../../assets/css.png'
+import Ts from '../../assets/ts.png'
 
 const Skillscontainer = styledComponents.div`
     ${tw`
@@ -95,6 +95,10 @@ const Skills = () => {
                       <SkillText>Javascript</SkillText>
                   </SkillItem>
                   <SkillItem>
+                      <img class='w-[125px] h-[125px]' src={Ts} alt="" />
+                      <SkillText>Typescript</SkillText>
+                  </SkillItem>
+                  <SkillItem>
                     <img class='w-[125px] h-[125px]' src={ReactIcon} alt="" />
                     <SkillText>React</SkillText>
                   </SkillItem>
@@ -116,11 +120,7 @@ const Skills = () => {
                   </SkillItem>
                   <SkillItem>
                       <img class='w-[125px] h-[125px]' src={Html} alt="" />
-                      <SkillText>HTML</SkillText>
-                  </SkillItem>
-                  <SkillItem>
-                      <img class='w-[125px] h-[125px]' src={Css} alt="" />
-                      <SkillText>CSS</SkillText>
+                      <SkillText>HTML/CSS</SkillText>
                   </SkillItem>
               </ContentContainer>
           </SkillsContentContainer>

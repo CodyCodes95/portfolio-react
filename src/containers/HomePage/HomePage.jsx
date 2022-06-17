@@ -2,9 +2,11 @@ import React from 'react'
 import styledComponents from 'styled-components'
 import tw from 'twin.macro'
 import About from '../../components/about/About'
+import Contact from '../../components/Contact/Contact'
 import Landing from '../../components/landing/Landing'
 import NavBarTop from '../../components/navbar/NavBarTop'
 import Skills from '../../components/skills/Skills'
+import Portfolio from '../../components/portfolio/Portfolio'
 
 const PageContainer = styledComponents.div`
     ${tw`
@@ -27,6 +29,8 @@ const HomePage = () => {
           <Landing />
           <About />
           <Skills />
+      <Portfolio />
+      <Contact />
     </PageContainer>
   )
 }

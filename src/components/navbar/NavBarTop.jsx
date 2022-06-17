@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from 'react'
-import NavbarSide from '../socialbar/NavBarSide'
+import NavbarSide from '../socialbar/SocialBar'
 import { Link } from 'react-scroll'
 
 const NavBarTopContainer = styledComponents.nav`
