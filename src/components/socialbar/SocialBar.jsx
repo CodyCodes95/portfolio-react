@@ -1,7 +1,7 @@
 import React from "react";
 import styledComponents from "styled-components";
 import tw from "twin.macro";
-import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Resume from '../../assets/CodyPartingtonBrisbane.pdf'
