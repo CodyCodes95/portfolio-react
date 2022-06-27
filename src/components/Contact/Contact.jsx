@@ -85,7 +85,7 @@ const Contact = () => {
         >
           <FormSection>
             <FormText>
-              Submit the form below or shoot me an email - codythatsme@gmail.com
+              Feel free to contact me here or via email - codythatsme@gmail.com
             </FormText>
           </FormSection>
           <input

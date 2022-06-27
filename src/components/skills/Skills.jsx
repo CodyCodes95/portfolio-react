@@ -10,12 +10,7 @@ import Ruby from '../../assets/ruby.png'
 import Html from '../../assets/html.png'
 import Ts from '../../assets/ts.png'
 
-const Skillscontainer = styledComponents.div`
-    ${tw`
-        w-full
-        h-screen       
-    `}
-`
+
 
 const SkillsContentContainer = styledComponents.div`
     ${tw`
@@ -24,7 +19,7 @@ const SkillsContentContainer = styledComponents.div`
         justify-center
         items-center
         w-full
-        h-full        
+        h-screen        
     `}
 `
 
@@ -32,6 +27,7 @@ const TitleContainer = styledComponents.div`
     ${tw`
         w-[75%]
         mb-auto
+        mt-24
     `}
 `
 
@@ -84,8 +80,7 @@ const SkillText = styledComponents.p`
 
 const Skills = () => {
   return (
-      <Skillscontainer name="skills">
-          <SkillsContentContainer>
+          <SkillsContentContainer name="skills">
               <TitleContainer>
                   <Title>Skills</Title>
               </TitleContainer>
@@ -124,7 +119,7 @@ const Skills = () => {
                   </SkillItem>
               </ContentContainer>
           </SkillsContentContainer>
-        </Skillscontainer>
+
   )
 }
 

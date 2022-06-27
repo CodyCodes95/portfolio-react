@@ -55,12 +55,12 @@ const SocialBar = () => {
             Github <FaGithub size={30} />
           </a>
         </SocialLinks>
-        <SocialLinks className="bg-emerald-200">
+        <SocialLinks className="bg-[#ffd100]">
           <a href="mailto:codythatsme@gmail.com">
             Email <HiOutlineMail size={30} />
           </a>
         </SocialLinks>
-        <SocialLinks className="bg-gray-500">
+        <SocialLinks className="bg-[#d90429]">
           <a href={Resume}>
             Resume <BsFillPersonLinesFill size={30} />
           </a>
