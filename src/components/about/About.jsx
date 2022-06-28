@@ -11,7 +11,7 @@ const AboutContainer = styledComponents.div`
         justify-center
         items-center
         w-full
-        h-screen
+        md:h-screen
     `}
 `
 
@@ -20,8 +20,6 @@ const AboutContent = styledComponents.div`
         w-[75%]
         flex
         flex-col
-        justify-center
-        h-[75%]
     `}
 `
 
@@ -45,6 +43,7 @@ const Title = styledComponents.h2`
 const ContentGrid = styledComponents.div`
     ${tw`
         grid
+        mt-44
         md:grid-cols-2
         h-full
     `}

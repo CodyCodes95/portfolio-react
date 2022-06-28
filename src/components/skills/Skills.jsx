@@ -19,7 +19,7 @@ const SkillsContentContainer = styledComponents.div`
         justify-center
         items-center
         w-full
-        h-screen        
+        md:h-screen        
     `}
 `
 
