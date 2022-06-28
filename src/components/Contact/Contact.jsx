@@ -5,7 +5,7 @@ import tw from 'twin.macro';
 const Contactcontainer = styled.div`
     ${tw`
         w-full
-        h-[65em]       
+        h-[100em]       
     `}
 `;
 

@@ -22,6 +22,8 @@ const PageContainer = styledComponents.div`
     `}
 `
 
+
+
 const HomePage = () => {
   return (
       <PageContainer>

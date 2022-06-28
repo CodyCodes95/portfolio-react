@@ -10,6 +10,15 @@ import { useState } from 'react'
 import NavbarSide from '../socialbar/SocialBar'
 import { Link } from 'react-scroll'
 
+const NavContainer = styledComponents.nav`
+  ${tw`
+        fixed
+        w-full
+        text-[#d6d6d6]
+        background[#202020]
+  `}
+`;
+
 
 const NavBarTopContainer = styledComponents.nav`
     ${tw`
@@ -123,41 +132,43 @@ const NavBarTop = () => {
     }
 
   return (
-    <NavBarTopContainer>
-      <ListItems>
-        <Link to="home" smooth={true} duration={500}>
-          <img src={Logo} alt="" />
-        </Link>
-      </ListItems>
-      <ListContainer>
+    <NavContainer>
+      <NavBarTopContainer>
         <ListItems>
           <Link to="home" smooth={true} duration={500}>
-            Home
+            <img src={Logo} alt="" />
           </Link>
         </ListItems>
-        <ListItems>
-          <Link to="about" smooth={true} duration={500}>
-            About
-          </Link>
-        </ListItems>
-        <ListItems>
-          <Link to="skills" smooth={true} duration={500}>
-            Skills
-          </Link>
-        </ListItems>
-        <ListItems>
-          <Link to="work" smooth={true} duration={500}>
-            Portfolio
-          </Link>
-        </ListItems>
-        <ListItems>
-          <Link to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </ListItems>
-      </ListContainer>
-      <NavbarSide />
-    </NavBarTopContainer>
+        <ListContainer>
+          <ListItems>
+            <Link to="home" smooth={true} duration={500}>
+              Home
+            </Link>
+          </ListItems>
+          <ListItems>
+            <Link to="about" smooth={true} duration={500}>
+              About
+            </Link>
+          </ListItems>
+          <ListItems>
+            <Link to="skills" smooth={true} duration={500}>
+              Skills
+            </Link>
+          </ListItems>
+          <ListItems>
+            <Link to="work" smooth={true} duration={500}>
+              Portfolio
+            </Link>
+          </ListItems>
+          <ListItems>
+            <Link to="contact" smooth={true} duration={500}>
+              Contact
+            </Link>
+          </ListItems>
+        </ListContainer>
+      </NavBarTopContainer>
+        <NavbarSide />
+    </NavContainer>
   );
 }
 
