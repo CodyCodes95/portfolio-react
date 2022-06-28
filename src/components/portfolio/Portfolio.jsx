@@ -144,10 +144,10 @@ const Portfolio = () => {
           <ProjectImage>
             <img src={Marketplace} alt="" />
             <ButtonContainer>
-              <a href="https://github.com/CodyCodes95/CodyPartington_T2A2">
+              <a href="https://github.com/CodyCodes95/CodyPartington_T2A2" target="_blank" rel="noreferrer noopener">
                 <ProjectButtons>Code</ProjectButtons>
               </a>
-              <a href="https://modified-rides.herokuapp.com/">
+              <a href="https://modified-rides.herokuapp.com/" target="_blank" rel="noreferrer noopener">
                 <ProjectButtons>Website</ProjectButtons>
               </a>
             </ButtonContainer>
@@ -193,7 +193,7 @@ const Portfolio = () => {
           <ProjectImage>
             <img src={Terminal} alt="" />
             <ButtonContainer>
-              <a href="https://github.com/CodyCodes95/CodyPartington_T2A2">
+              <a href="https://github.com/CodyCodes95/CodyPartington_T2A2" target="_blank" rel="noreferrer noopener">
                 <ProjectButtons>Code</ProjectButtons>
               </a>
             </ButtonContainer>
@@ -203,10 +203,10 @@ const Portfolio = () => {
           <ProjectImage>
             <img src={Port} alt="" />
             <ButtonContainer>
-              <a href="https://github.com/CodyCodes95/portfolio">
+              <a href="https://github.com/CodyCodes95/portfolio" target="_blank" rel="noreferrer noopener">
                 <ProjectButtons>Code</ProjectButtons>
               </a>
-              <a href="https://modified-rides.herokuapp.com/">
+              <a href="https://modified-rides.herokuapp.com/" target="_blank" rel="noreferrer noopener">
                 <ProjectButtons>Website</ProjectButtons>
               </a>
             </ButtonContainer>

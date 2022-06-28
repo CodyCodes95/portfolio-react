@@ -4,7 +4,7 @@ import tw from "twin.macro";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
-import Resume from '../../assets/CodyPartingtonBrisbane.pdf'
+import Resume from "../../assets/CodyPartingtonBrisbane.pdf";
 
 const SocialIconsContainer = styledComponents.div`
     ${tw`
@@ -46,12 +46,20 @@ const SocialBar = () => {
     <SocialIconsContainer>
       <ul>
         <SocialLinks className="bg-blue-600">
-          <a href="https://www.linkedin.com/in/cody-partington/">
+          <a
+            href="https://www.linkedin.com/in/cody-partington/"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             LinkedIn <FaLinkedin size={30} />
           </a>
         </SocialLinks>
         <SocialLinks className={"bg-slate-800"}>
-          <a href="https://github.com/CodyCodes95">
+          <a
+            href="https://github.com/CodyCodes95"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
             Github <FaGithub size={30} />
           </a>
         </SocialLinks>
