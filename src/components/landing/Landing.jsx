@@ -27,7 +27,7 @@ const ContentContainer = styledComponents.div`
 
 const Title = styledComponents.h1`
     ${tw`
-        text-8xl
+        text-5xl
         text-center
         md:text-9xl
         font-family['Kaushan Script']
