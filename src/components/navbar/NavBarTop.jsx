@@ -10,6 +10,7 @@ import { useState } from 'react'
 import NavbarSide from '../socialbar/SocialBar'
 import { Link } from 'react-scroll'
 
+
 const NavBarTopContainer = styledComponents.nav`
     ${tw`
         fixed
@@ -55,6 +56,7 @@ const ListContainerMobile = styledComponents.ul`
 
 const ListItems = styledComponents.li`
 ${tw`
+    list-none
     text-lg
     cursor-pointer
     mr-1
@@ -110,7 +112,7 @@ const NavBarTop = () => {
                   <Link onClick={clickHandler} to="skills" smooth={true} duration={500}>Skills</Link>
               </ListItemsMobile>
               <ListItemsMobile>
-                  <Link onClick={clickHandler} to="work" smooth={true} duration={500}>Work</Link>
+                  <Link onClick={clickHandler} to="work" smooth={true} duration={500}>Portfolio</Link>
               </ListItemsMobile>
               <ListItemsMobile>
                   <Link onClick={clickHandler} to="contact" smooth={true} duration={500}>Contact</Link>
@@ -121,30 +123,42 @@ const NavBarTop = () => {
     }
 
   return (
-      <NavBarTopContainer>
-          <div>
-            <img src={Logo} alt="" />
-          </div>
-          <ListContainer>
-              <ListItems>
-                <Link to="home" smooth={true} duration={500}>Home</Link>
-              </ListItems>
-              <ListItems>
-                <Link to="about" smooth={true} duration={500}>About</Link>
-              </ListItems>
-              <ListItems>
-                <Link to="skills" smooth={true} duration={500}>Skills</Link>
-              </ListItems>
-              <ListItems>
-                <Link to="work" smooth={true} duration={500}>Work</Link>
-              </ListItems>
-              <ListItems>
-                <Link to="contact" smooth={true} duration={500}>Contact</Link>
-              </ListItems>
-          </ListContainer>
-          <NavbarSide />
+    <NavBarTopContainer>
+      <ListItems>
+        <Link to="home" smooth={true} duration={500}>
+          <img src={Logo} alt="" />
+        </Link>
+      </ListItems>
+      <ListContainer>
+        <ListItems>
+          <Link to="home" smooth={true} duration={500}>
+            Home
+          </Link>
+        </ListItems>
+        <ListItems>
+          <Link to="about" smooth={true} duration={500}>
+            About
+          </Link>
+        </ListItems>
+        <ListItems>
+          <Link to="skills" smooth={true} duration={500}>
+            Skills
+          </Link>
+        </ListItems>
+        <ListItems>
+          <Link to="work" smooth={true} duration={500}>
+            Portfolio
+          </Link>
+        </ListItems>
+        <ListItems>
+          <Link to="contact" smooth={true} duration={500}>
+            Contact
+          </Link>
+        </ListItems>
+      </ListContainer>
+      <NavbarSide />
     </NavBarTopContainer>
-  )
+  );
 }
 
 export default NavBarTop

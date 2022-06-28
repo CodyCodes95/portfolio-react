@@ -135,7 +135,7 @@ const FeatureList = styled.ul`
 
 const Portfolio = () => {
   return (
-    <PortfolioContainer>
+    <PortfolioContainer name="work">
       <PortfolioContentContainer>
         <TitleContainer>
           <Title>Portfolio</Title>

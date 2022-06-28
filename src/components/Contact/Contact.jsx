@@ -14,6 +14,7 @@ const ContactContentContainer = styled.div`
         flex
         flex-col
         items-center
+        justify-center
         w-full
         h-full        
     `}
@@ -74,7 +75,7 @@ const SubmitButton = styled.button`
 
 const Contact = () => {
   return (
-    <Contactcontainer>
+    <Contactcontainer name="contact">
       <ContactContentContainer>
         <TitleContainer>
           <Title>Contact</Title>

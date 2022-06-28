@@ -11,14 +11,15 @@ const AboutContainer = styledComponents.div`
         justify-center
         items-center
         w-full
-        h-screen
+        h-full
     `}
 `
 
 const AboutContent = styledComponents.div`
     ${tw`
         w-[75%]
-
+        flex
+        flex-col
     `}
 `
 
@@ -93,7 +94,6 @@ const About = () => {
                           Development bootcamp.
                           
                       </AboutText>
-                      <br />
             <AboutText>
               My professional skills mostly fall under business management,
               which at first glance may not seem to apply to a career in

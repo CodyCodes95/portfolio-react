@@ -99,7 +99,7 @@ const Skills = () => {
                   </SkillItem>
                   <SkillItem>
                     <img class='w-[125px] h-[125px]' src={Node} alt="" />
-                    <SkillText>Node.js</SkillText>
+                    <SkillText>Node/Express</SkillText>
                   </SkillItem>
                   <SkillItem>
                       <img class='w-[125px] h-[125px]' src={Pg} alt="" />
