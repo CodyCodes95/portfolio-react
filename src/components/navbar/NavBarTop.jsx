@@ -100,22 +100,22 @@ const NavBarTop = () => {
     setMenu(!menu);
   };
 
-    const controlNavbar = () => {
-      if (typeof window !== "undefined") {
-        if (window.scrollY > lastScrollY) {
-          // if scroll down hide the navbar
-          setShowNav(false);
-        } else {
-          // if scroll up show the navbar
-          setShowNav(true);
-        }
-
-        // remember current page location to use in the next move
-        setLastScrollY(window.scrollY);
-      }
-    };
   
-    useEffect(() => {
+  useEffect(() => {
+      const controlNavbar = () => {
+        if (typeof window !== "undefined") {
+          if (window.scrollY > lastScrollY) {
+            // if scroll down hide the navbar
+            setShowNav(false);
+          } else {
+            // if scroll up show the navbar
+            setShowNav(true);
+          }
+    
+          // remember current page location to use in the next move
+          setLastScrollY(window.scrollY);
+        }
+      };
       if (typeof window !== "undefined") {
         window.addEventListener("scroll", controlNavbar);
 
