@@ -14,6 +14,8 @@ import Mongo from '../../assets/mongo.png'
 
 const SkillsContentContainer = styledComponents.div`
     ${tw`
+        mt-24
+        md:mt-0
         flex
         flex-col
         justify-center
@@ -21,7 +23,7 @@ const SkillsContentContainer = styledComponents.div`
         w-full
         md:h-screen        
     `}
-`
+`;
 
 const TitleContainer = styledComponents.div`
     ${tw`

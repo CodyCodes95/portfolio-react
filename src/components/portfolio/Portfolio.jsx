@@ -8,7 +8,8 @@ import Port from "../../assets/port.png";
 const PortfolioContainer = styled.div`
   ${tw`
         w-full
-         
+        mt-44
+        md:mt-0
     `}
 `;
 
