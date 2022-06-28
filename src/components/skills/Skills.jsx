@@ -7,8 +7,8 @@ import Node from '../../assets/node.svg'
 import Pg from '../../assets/pg.png'
 import TwIcon from '../../assets/tw.png'
 import Ruby from '../../assets/ruby.png'
-import Html from '../../assets/html.png'
 import Ts from '../../assets/ts.png'
+import Mongo from '../../assets/mongo.png'
 
 
 
@@ -102,6 +102,10 @@ const Skills = () => {
                     <SkillText>Node/Express</SkillText>
                   </SkillItem>
                   <SkillItem>
+                      <img class='w-[125px] h-[125px]' src={Mongo} alt="" />
+                      <SkillText>MongoDB</SkillText>
+                  </SkillItem>
+                  <SkillItem>
                       <img class='w-[125px] h-[125px]' src={Pg} alt="" />
                       <SkillText>PostgreSQL</SkillText>
                   </SkillItem>
@@ -112,10 +116,6 @@ const Skills = () => {
                   <SkillItem>
                       <img class='w-[125px] h-[125px]' src={Ruby} alt="" />
                       <SkillText>Ruby/Rails</SkillText>
-                  </SkillItem>
-                  <SkillItem>
-                      <img class='w-[125px] h-[125px]' src={Html} alt="" />
-                      <SkillText>HTML/CSS</SkillText>
                   </SkillItem>
               </ContentContainer>
           </SkillsContentContainer>
