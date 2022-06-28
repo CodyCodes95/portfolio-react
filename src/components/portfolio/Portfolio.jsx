@@ -26,6 +26,7 @@ const PortfolioContentContainer = styled.div`
 
 const TitleContainer = styled.div`
   ${tw`
+        mt-24
         w-[75%]
         // mb-auto
     `}
