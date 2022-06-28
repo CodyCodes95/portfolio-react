@@ -64,6 +64,8 @@ const SkillItem = styledComponents.div`
         m-1
         items-center
         justify-center
+        mt-16
+        md:mt-0
     `}
     img {
         ${tw`
