@@ -32,7 +32,7 @@ const NavBarTopContainer = styledComponents.nav`
         justify-between
         px-4
         background[#202020]
-        duration-300
+        duration-200
     `}
 
     img {
@@ -100,31 +100,30 @@ const NavBarTop = () => {
     setMenu(!menu);
   };
 
-  
   useEffect(() => {
-      const controlNavbar = () => {
-        if (typeof window !== "undefined") {
-          if (window.scrollY > lastScrollY) {
-            // if scroll down hide the navbar
-            setShowNav(false);
-          } else {
-            // if scroll up show the navbar
-            setShowNav(true);
-          }
-    
-          // remember current page location to use in the next move
-          setLastScrollY(window.scrollY);
-        }
-      };
+    const controlNavbar = () => {
       if (typeof window !== "undefined") {
-        window.addEventListener("scroll", controlNavbar);
+        if (window.scrollY > lastScrollY) {
+          // if scroll down hide the navbar
+          setShowNav(false);
+        } else {
+          // if scroll up show the navbar
+          setShowNav(true);
+        }
 
-        // cleanup function
-        return () => {
-          window.removeEventListener("scroll", controlNavbar);
-        };
+        // remember current page location to use in the next move
+        setLastScrollY(window.scrollY);
       }
-    }, [lastScrollY]);
+    };
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
+
+      // cleanup function
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
 
   const mobile = useMediaQuery({ maxWidth: SCREENS.md });
   if (mobile) {

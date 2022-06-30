@@ -90,19 +90,19 @@ const Contact = () => {
             </FormText>
           </FormSection>
           <input
-            className="bg-gray-300"
+            className="bg-gray-300 text-black"
             type="text"
             placeholder="Name"
             name="name"
           />
           <input
-            className="my-4 p-2 bg-gray-300"
+            className="my-4 p-2 bg-gray-300 text-black"
             type="text"
             placeholder="Email"
             name="email"
           />
           <textarea
-            className="bg-gray-300"
+            className="bg-gray-300 text-black"
             name="message"
             rows="10"
             placeholder="Message"
