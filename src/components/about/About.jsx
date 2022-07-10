@@ -11,7 +11,7 @@ const AboutContainer = styledComponents.div`
         justify-center
         items-center
         w-full
-        md:h-screen
+        md:h-full
     `}
 `
 
@@ -43,7 +43,7 @@ const Title = styledComponents.h2`
 const ContentGrid = styledComponents.div`
     ${tw`
         grid
-        mt-44
+        mt-20
         md:grid-cols-2
         h-full
     `}
