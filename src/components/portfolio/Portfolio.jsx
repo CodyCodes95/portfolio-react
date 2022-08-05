@@ -183,7 +183,24 @@ const Portfolio = () => {
             </ProjectDescription>
           </ProjectDescriptionContainer>
         </ProjectsContainer>
-        <ProjectsContainer>
+        <ProjectsContainer className="border-t-2">
+          <ProjectDescriptionContainer>
+            <ProjectTitle>Two Sided Marketplace</ProjectTitle>
+            <ProjectDescription>
+              One of our assessments in Coder Academy was to create a full stack
+              application using Ruby on Rails and PostgreSQL. The goal was to
+              design a two sided marketplace application with all required
+              functionality. Some of the website features include:
+              <FeatureList>
+                <li>User accounts</li>
+                <li>Admin roles/functionality</li>
+                <li>Direct private messaging between user accounts</li>
+                <li>Options to filter listings</li>
+                <li>Image uploads for listings</li>
+                <li>Ability to send/accept offers on listings</li>
+              </FeatureList>
+            </ProjectDescription>
+          </ProjectDescriptionContainer>
           <ProjectImage>
             <img src={Marketplace} alt="" />
             <ButtonContainer>
@@ -203,25 +220,20 @@ const Portfolio = () => {
               </a>
             </ButtonContainer>
           </ProjectImage>
-          <ProjectDescriptionContainer>
-            <ProjectTitle>Two Sided Marketplace</ProjectTitle>
-            <ProjectDescription>
-              One of our assessments in Coder Academy was to create a full stack
-              application using Ruby on Rails and PostgreSQL. The goal was to
-              design a two sided marketplace application with all required
-              functionality. Some of the website features include:
-              <FeatureList>
-                <li>User accounts</li>
-                <li>Admin roles/functionality</li>
-                <li>Direct private messaging between user accounts</li>
-                <li>Options to filter listings</li>
-                <li>Image uploads for listings</li>
-                <li>Ability to send/accept offers on listings</li>
-              </FeatureList>
-            </ProjectDescription>
-          </ProjectDescriptionContainer>
         </ProjectsContainer>
         <ProjectsContainer className="border-t-2">
+          <ProjectImage>
+            <img src={Terminal} alt="" />
+            <ButtonContainer>
+              <a
+                href="https://github.com/CodyCodes95/CodyPartington_T2A2"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <ProjectButtons>Code</ProjectButtons>
+              </a>
+            </ButtonContainer>
+          </ProjectImage>
           <ProjectDescriptionContainer>
             <ProjectTitle>Terminal Application</ProjectTitle>
             <ProjectDescription>
@@ -241,20 +253,17 @@ const Portfolio = () => {
               </FeatureList>
             </ProjectDescription>
           </ProjectDescriptionContainer>
-          <ProjectImage>
-            <img src={Terminal} alt="" />
-            <ButtonContainer>
-              <a
-                href="https://github.com/CodyCodes95/CodyPartington_T2A2"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <ProjectButtons>Code</ProjectButtons>
-              </a>
-            </ButtonContainer>
-          </ProjectImage>
         </ProjectsContainer>
         <ProjectsContainer className="border-t-2">
+          <ProjectDescriptionContainer>
+            <ProjectTitle>Portfolio Website</ProjectTitle>
+            <ProjectDescription>
+              Our first assignment at Coder Academy was to create a portfolio
+              website using only vanilla HTML and CSS. Although I have since
+              recreated it using React, Im proud of what was achieved using no
+              frameworks.
+            </ProjectDescription>
+          </ProjectDescriptionContainer>
           <ProjectImage>
             <img src={Port} alt="" />
             <ButtonContainer>
@@ -274,15 +283,6 @@ const Portfolio = () => {
               </a>
             </ButtonContainer>
           </ProjectImage>
-          <ProjectDescriptionContainer>
-            <ProjectTitle>Portfolio Website</ProjectTitle>
-            <ProjectDescription>
-              Our first assignment at Coder Academy was to create a portfolio
-              website using only vanilla HTML and CSS. Although I have since
-              recreated it using React, Im proud of what was achieved using no
-              frameworks.
-            </ProjectDescription>
-          </ProjectDescriptionContainer>
         </ProjectsContainer>
       </PortfolioContentContainer>
     </PortfolioContainer>
