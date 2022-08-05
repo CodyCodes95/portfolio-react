@@ -4,6 +4,7 @@ import tw from "twin.macro";
 import Marketplace from "../../assets/car.png";
 import Terminal from "../../assets/terminal.png";
 import Port from "../../assets/port.png";
+import Pc from "../../assets/pcb.png";
 
 const PortfolioContainer = styled.div`
   ${tw`
@@ -144,12 +145,60 @@ const Portfolio = () => {
         </TitleContainer>
         <ProjectsContainer>
           <ProjectImage>
-            <img src={Marketplace} alt="" />
+            <img src={Pc} alt="" />
             <ButtonContainer>
-              <a href="https://github.com/CodyCodes95/CodyPartington_T2A2" target="_blank" rel="noreferrer noopener">
+              <a
+                href="https://github.com/orgs/Cody-Sam/repositories"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <ProjectButtons>Code</ProjectButtons>
               </a>
-              <a href="https://modified-rides.herokuapp.com/" target="_blank" rel="noreferrer noopener">
+              <a
+                href="https://pc-builder-t2a3.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <ProjectButtons>Website</ProjectButtons>
+              </a>
+            </ButtonContainer>
+          </ProjectImage>
+          <ProjectDescriptionContainer>
+            <ProjectTitle>PC Builder Application</ProjectTitle>
+            <ProjectDescription>
+              Our final assessment at Coder Academy was to create a full stack
+              application in a team built upon the MERN stack. Myself and my
+              teamamte Sam decided to build a PC building application, where
+              users could select different components and parts for their dream
+              PC build then order that build directly. The application also
+              featured a shopfront where users could buy parts for their own
+              build individually.
+              <FeatureList>
+                <li>Build your own PC</li>
+                <li>Stripe Checkout</li>
+                <li>User authentication using JWT</li>
+                <li>Shopfront for computer parts</li>
+                <li>Shopping cart functionality to buy multiple products</li>
+              </FeatureList>
+            </ProjectDescription>
+          </ProjectDescriptionContainer>
+        </ProjectsContainer>
+        <ProjectsContainer>
+          <ProjectImage>
+            <img src={Marketplace} alt="" />
+            <ButtonContainer>
+              <a
+                href="https://github.com/CodyCodes95/CodyPartington_T2A2"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <ProjectButtons>Code</ProjectButtons>
+              </a>
+              <a
+                href="https://modified-rides.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <ProjectButtons>Website</ProjectButtons>
               </a>
             </ButtonContainer>
@@ -195,7 +244,11 @@ const Portfolio = () => {
           <ProjectImage>
             <img src={Terminal} alt="" />
             <ButtonContainer>
-              <a href="https://github.com/CodyCodes95/CodyPartington_T2A2" target="_blank" rel="noreferrer noopener">
+              <a
+                href="https://github.com/CodyCodes95/CodyPartington_T2A2"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <ProjectButtons>Code</ProjectButtons>
               </a>
             </ButtonContainer>
@@ -205,10 +258,18 @@ const Portfolio = () => {
           <ProjectImage>
             <img src={Port} alt="" />
             <ButtonContainer>
-              <a href="https://github.com/CodyCodes95/portfolio" target="_blank" rel="noreferrer noopener">
+              <a
+                href="https://github.com/CodyCodes95/portfolio"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <ProjectButtons>Code</ProjectButtons>
               </a>
-              <a href="https://modified-rides.herokuapp.com/" target="_blank" rel="noreferrer noopener">
+              <a
+                href="https://modified-rides.herokuapp.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
                 <ProjectButtons>Website</ProjectButtons>
               </a>
             </ButtonContainer>
