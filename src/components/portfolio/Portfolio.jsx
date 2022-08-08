@@ -150,7 +150,7 @@ const Portfolio = () => {
           <Title>Portfolio</Title>
         </TitleContainer>
         {work.map((project, i) => {
-          return i % 2 == 0 ? (
+          return i % 2 === 0 ? (
             <ProjectsContainer key={i} className={i !== 0 && "border-t-2"}>
               <ProjectImage>
                 <img src={project.img} alt="" />
