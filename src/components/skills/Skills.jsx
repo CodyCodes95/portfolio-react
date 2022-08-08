@@ -90,35 +90,35 @@ const Skills = () => {
               </TitleContainer>
               <ContentContainer>
                   <SkillItem>
-                      <img class='w-[125px] h-[125px]' src={Js} alt="" />
+                      <img className='w-[125px] h-[125px]' src={Js} alt="" />
                       <SkillText>Javascript</SkillText>
                   </SkillItem>
                   <SkillItem>
-                      <img class='w-[125px] h-[125px]' src={Ts} alt="" />
+                      <img className='w-[125px] h-[125px]' src={Ts} alt="" />
                       <SkillText>Typescript</SkillText>
                   </SkillItem>
                   <SkillItem>
-                    <img class='w-[125px] h-[125px]' src={ReactIcon} alt="" />
+                    <img className='w-[125px] h-[125px]' src={ReactIcon} alt="" />
                     <SkillText>React</SkillText>
                   </SkillItem>
                   <SkillItem>
-                    <img class='w-[125px] h-[125px]' src={Node} alt="" />
+                    <img className='w-[125px] h-[125px]' src={Node} alt="" />
                     <SkillText>Node/Express</SkillText>
                   </SkillItem>
                   <SkillItem>
-                      <img class='w-[125px] h-[125px]' src={Mongo} alt="" />
+                      <img className='w-[125px] h-[125px]' src={Mongo} alt="" />
                       <SkillText>MongoDB</SkillText>
                   </SkillItem>
                   <SkillItem>
-                      <img class='w-[125px] h-[125px]' src={Pg} alt="" />
+                      <img className='w-[125px] h-[125px]' src={Pg} alt="" />
                       <SkillText>PostgreSQL</SkillText>
                   </SkillItem>
                   <SkillItem>
-                      <img class='w-[125px] h-[125px]' src={TwIcon} alt="" />
+                      <img className='w-[125px] h-[125px]' src={TwIcon} alt="" />
                       <SkillText>Tailwind CSS</SkillText>
                   </SkillItem>
                   <SkillItem>
-                      <img class='w-[125px] h-[125px]' src={Ruby} alt="" />
+                      <img className='w-[125px] h-[125px]' src={Ruby} alt="" />
                       <SkillText>Ruby/Rails</SkillText>
                   </SkillItem>
               </ContentContainer>

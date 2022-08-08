@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import Marketplace from "../../assets/car.png";
-import Terminal from "../../assets/terminal.png";
-import Port from "../../assets/port.png";
-import Pc from "../../assets/pcb.png";
+import marketplace from "../../assets/car.png";
+import pc from "../../assets/pcb.png";
+import instag from "../../assets/instag.png";
 
 const PortfolioContainer = styled.div`
   ${tw`
@@ -137,155 +136,90 @@ const FeatureList = styled.ul`
 `;
 
 const Portfolio = () => {
+
+  const work = [
+    { name: "Instagators Podcast Website", description: "A local Australian car podcast called The Instagators asked me to create a website for the podcast as they needed a platform to sell their stickers. They wanted a simple single-page website where they could list different merchandise to sell. I decided to build the website in NextJS to try out a new framework. The website went live and was able to accommodate the sale of the merchandise to real-world customers.", features: ["Serverless functionality using Next JS", "Stripe checkout for orders", "Although just stickers for now, very easy to expand and list future merchandise for sale"], img: instag, code:"https://github.com/CodyCodes95/instagators", website:"https://theinstagator.com.au/" },
+    { name: "PC Builder Application", description: "Our final assessment at Coder Academy was to create a full stack application in a team built upon the MERN stack. Myself and my teamamte Sam decided to build a PC building application, where users could select different components and parts for their dream PC build then order that build directly. The application also featured a shopfront where users could buy parts for their own build individually.", features: ["Build your own PC", "Stripe checkout for a PC build or individual parts", "User authentication using JWT", "Shopfront for computer parts", "Shopping cart functionality to buy multiple products", "Admin functionality to create new listings with image upload, modify existing, or review orders"], img: pc, code: "https://github.com/orgs/Cody-Sam/repositories", website:"https://pc-builder-t2a3.herokuapp.com/" },
+    { name: "Two Sided Marketplace", description: "One of our assessments in Coder Academy was to create a full stack application using Ruby on Rails and PostgreSQL. The goal was to design a two sided marketplace application with all required functionality. Some of the website features include:", features: ["User accounts", "Admin roles/functionality", "Direct private messaging between user accounts", "Options to filter listings", "Image upload for listings", "Ability to send/accept offers on listings"], img:marketplace, code:"https://github.com/CodyCodes95/CodyPartington_T2A2", website:"https://modified-rides.herokuapp.com/"} 
+  ]
+
   return (
     <PortfolioContainer name="work">
       <PortfolioContentContainer>
         <TitleContainer>
           <Title>Portfolio</Title>
         </TitleContainer>
-        <ProjectsContainer>
-          <ProjectImage>
-            <img src={Pc} alt="" />
-            <ButtonContainer>
-              <a
-                href="https://github.com/orgs/Cody-Sam/repositories"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <ProjectButtons>Code</ProjectButtons>
-              </a>
-              <a
-                href="https://pc-builder-t2a3.herokuapp.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <ProjectButtons>Website</ProjectButtons>
-              </a>
-            </ButtonContainer>
-          </ProjectImage>
-          <ProjectDescriptionContainer>
-            <ProjectTitle>PC Builder Application</ProjectTitle>
-            <ProjectDescription>
-              Our final assessment at Coder Academy was to create a full stack
-              application in a team built upon the MERN stack. Myself and my
-              teamamte Sam decided to build a PC building application, where
-              users could select different components and parts for their dream
-              PC build then order that build directly. The application also
-              featured a shopfront where users could buy parts for their own
-              build individually.
-              <FeatureList>
-                <li>Build your own PC</li>
-                <li>Stripe Checkout</li>
-                <li>User authentication using JWT</li>
-                <li>Shopfront for computer parts</li>
-                <li>Shopping cart functionality to buy multiple products</li>
-              </FeatureList>
-            </ProjectDescription>
-          </ProjectDescriptionContainer>
-        </ProjectsContainer>
-        <ProjectsContainer className="border-t-2">
-          <ProjectDescriptionContainer>
-            <ProjectTitle>Two Sided Marketplace</ProjectTitle>
-            <ProjectDescription>
-              One of our assessments in Coder Academy was to create a full stack
-              application using Ruby on Rails and PostgreSQL. The goal was to
-              design a two sided marketplace application with all required
-              functionality. Some of the website features include:
-              <FeatureList>
-                <li>User accounts</li>
-                <li>Admin roles/functionality</li>
-                <li>Direct private messaging between user accounts</li>
-                <li>Options to filter listings</li>
-                <li>Image uploads for listings</li>
-                <li>Ability to send/accept offers on listings</li>
-              </FeatureList>
-            </ProjectDescription>
-          </ProjectDescriptionContainer>
-          <ProjectImage>
-            <img src={Marketplace} alt="" />
-            <ButtonContainer>
-              <a
-                href="https://github.com/CodyCodes95/CodyPartington_T2A2"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <ProjectButtons>Code</ProjectButtons>
-              </a>
-              <a
-                href="https://modified-rides.herokuapp.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <ProjectButtons>Website</ProjectButtons>
-              </a>
-            </ButtonContainer>
-          </ProjectImage>
-        </ProjectsContainer>
-        <ProjectsContainer className="border-t-2">
-          <ProjectImage>
-            <img src={Terminal} alt="" />
-            <ButtonContainer>
-              <a
-                href="https://github.com/CodyCodes95/CodyPartington_T2A2"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <ProjectButtons>Code</ProjectButtons>
-              </a>
-            </ButtonContainer>
-          </ProjectImage>
-          <ProjectDescriptionContainer>
-            <ProjectTitle>Terminal Application</ProjectTitle>
-            <ProjectDescription>
-              Our first project assignment for Coder Academy was to create a
-              terminal application using Ruby. Inspired by the daily Kahoot's we
-              played in class, I set out to make a full fledged Kahhot style
-              quiz game in the terminal. Some of the features of the application
-              are:
-              <FeatureList>
-                <li>Allows for multiple choice quizzes to be made</li>
-                <li>
-                  Quizzes that are made are saved to a file, allowing them to be
-                  played at anytime
-                </li>
-                <li>Stores high score data for each quiz</li>
-                <li>Admin controls to manage high score data/modify quizzes</li>
-              </FeatureList>
-            </ProjectDescription>
-          </ProjectDescriptionContainer>
-        </ProjectsContainer>
-        <ProjectsContainer className="border-t-2">
-          <ProjectDescriptionContainer>
-            <ProjectTitle>Portfolio Website</ProjectTitle>
-            <ProjectDescription>
-              Our first assignment at Coder Academy was to create a portfolio
-              website using only vanilla HTML and CSS. Although I have since
-              recreated it using React, Im proud of what was achieved using no
-              frameworks.
-            </ProjectDescription>
-          </ProjectDescriptionContainer>
-          <ProjectImage>
-            <img src={Port} alt="" />
-            <ButtonContainer>
-              <a
-                href="https://github.com/CodyCodes95/portfolio"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <ProjectButtons>Code</ProjectButtons>
-              </a>
-              <a
-                href="https://modified-rides.herokuapp.com/"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <ProjectButtons>Website</ProjectButtons>
-              </a>
-            </ButtonContainer>
-          </ProjectImage>
-        </ProjectsContainer>
+        {work.map((project, i) => {
+          return i % 2 == 0 ? (
+            <ProjectsContainer key={i} className={i !== 0 && "border-t-2"}>
+              <ProjectImage>
+                <img src={project.img} alt="" />
+                <ButtonContainer>
+                  <a
+                    href={project.code}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <ProjectButtons>Code</ProjectButtons>
+                  </a>
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <ProjectButtons>Website</ProjectButtons>
+                  </a>
+                </ButtonContainer>
+              </ProjectImage>
+              <ProjectDescriptionContainer>
+                <ProjectTitle>{project.name}</ProjectTitle>
+                <ProjectDescription>
+                  {project.description}
+                  <FeatureList>
+                    {project.features.map((feature, i) => {
+                      return <li key={i}>{feature}</li>;
+                    })}
+                  </FeatureList>
+                </ProjectDescription>
+              </ProjectDescriptionContainer>
+            </ProjectsContainer>
+          ) : (
+            <ProjectsContainer key={i} className={i !== 0 && "border-t-2"}>
+              <ProjectDescriptionContainer>
+                <ProjectTitle>{project.name}</ProjectTitle>
+                <ProjectDescription>
+                  {project.description}
+                  <FeatureList>
+                    {project.features.map((feature, i) => {
+                      return <li key={i}>{feature}</li>;
+                    })}
+                  </FeatureList>
+                </ProjectDescription>
+              </ProjectDescriptionContainer>
+              <ProjectImage>
+                <img src={project.img} alt="" />
+                <ButtonContainer>
+                  <a
+                    href={project.code}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <ProjectButtons>Code</ProjectButtons>
+                  </a>
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                  >
+                    <ProjectButtons>Website</ProjectButtons>
+                  </a>
+                </ButtonContainer>
+              </ProjectImage>
+            </ProjectsContainer>
+          );
+        })}
       </PortfolioContentContainer>
-    </PortfolioContainer>
+      </PortfolioContainer>
   );
 };
 
